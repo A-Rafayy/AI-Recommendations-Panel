@@ -11,20 +11,21 @@ This component displays a summary, a list of recommendations, and flags for vete
 
 1. Clone the repository:
 
-git clone https://github.com/A-Rafayy/AI-Recommendations-Panel.git
-cd <repo-name>
+   - git clone https://github.com/A-Rafayy/AI-Recommendations-Panel.git
+   
+   - cd AI-Recommendations-Panel
 
-2. Install dependencies:
+3. Install dependencies:
 
-npm install
+   - npm install
 
 3. Start the development server:
 
-npm run dev
+   - npm run dev
 
 4. Open in your browser:
 
-http://localhost:3000
+   - http://localhost:3000
 
 ---
 
