@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Recommendations Panel
 
-## Getting Started
+A clean, clinical-looking **AI Recommendations Panel** built with **React/Next + TailwindCSS**.  
+This component displays a summary, a list of recommendations, and flags for veterinary cases using a static JSON object.
 
-First, run the development server:
+---
 
-```bash
+ ## How to Run the Project
+
+**Clone from GitHub**
+
+1. Clone the repository:
+
+git clone https://github.com/A-Rafayy/AI-Recommendations-Panel.git
+cd <repo-name>
+
+2. Install dependencies:
+
+npm install
+
+3. Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open in your browser:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+  ### Demo Data
 
-To learn more about Next.js, take a look at the following resources:
+```json
+{
+  "summary": "10-year-old female spayed cat with E. coli UTI confirmed on culture.",
+  "recommendations": [
+    { "title": "Primary Antibiotic", "value": "Amoxicillin-clavulanate" },
+    { "title": "Dosage", "value": "12.5–20 mg/kg PO q12h" },
+    { "title": "Duration", "value": "7 days" },
+    { "title": "Monitoring", "value": "Recheck clinical signs in 3–4 days" }
+  ],
+  "flags": ["No complicating factors identified", "Follow ISCAID guidelines"]
+}
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
